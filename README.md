@@ -2,7 +2,24 @@
 My own tools code for NGS data analysis (Next Generation Sequencing)
 
 ## parse-mpileup.py
-parse `samtools mpileup` command output, also known as `.pileup` file, and convert `.pileup` file into `.bmat`format, the format like:
+parse `samtools mpileup` command output, also known as `.pileup` file, the file like:
+
+```
+chr1	10030	c	1	^6.	A
+chr1	10031	t	1	.	A
+chr1	10032	a	1	.	F
+chr1	10033	a	1	.	F
+chr1	10034	c	1	.	<
+chr1	10035	c	1	.	F
+chr1	10036	c	0	*	*
+chr1	10037	t	1	.-1A	A
+chr1	10038	a	0	*	*
+chr1	10039	a	0	*	*
+```
+The `.pileup` format explain please check the HTML 
+[!pileup explain](https://en.wikipedia.org/wiki/Pileup_format)
+
+And convert `.pileup` file into `.bmat`format, the format like:
 
 ```
 chr_name	chr_index	ref_base	A	G	C	T	del_count	insert_count	ambiguous_count	deletioninsertion	ambiguous	mut_num
