@@ -17,7 +17,7 @@ chr1	10038	a	0	*	*
 chr1	10039	a	0	*	*
 ```
 The `.pileup` format explain please check the HTML 
-[!pileup explain](https://en.wikipedia.org/wiki/Pileup_format)
+[pileup explain](http://samtools.sourceforge.net/pileup.shtml)
 
 And convert `.pileup` file into `.bmat`format, the format like:
 
