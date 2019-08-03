@@ -3,6 +3,17 @@
 # ngstools
 My own tools code for NGS data analysis (Next Generation Sequencing)
 
+Now we have 2 R functions and 1 Python tool:
+
+```
+Python tools:
+	parse-mpileup.py
+
+R functions:
+	plot.TAD
+	plot.matrix
+```
+
 ## parse-mpileup.py
 parse `samtools mpileup` command output, also known as `.pileup` file, the file like:
 
